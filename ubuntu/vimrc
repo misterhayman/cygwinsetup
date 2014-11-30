@@ -1,0 +1,12 @@
+" Enable syntax
+if !exists("g:syntax_on")
+    syntax enable
+endif
+
+" Tabs
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Remove whitespace at end of line
+autocmd FileType h,c,cpp,py autocmd BufWritePre <buffer> :%s/\s\+$//e

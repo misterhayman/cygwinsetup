@@ -1,0 +1,21 @@
+[user]
+	email = misterhayman@gmail.com
+	name = Alexander Hayman
+[core]
+	editor = vim
+[credential]
+	helper = cache
+[alias]
+	lo = log --oneline
+	lot = log --all --graph --decorate --oneline
+	ba = branch --all
+	ca = commit --amend
+	ci = commit
+	co = checkout
+	ds = diff --staged
+	rh = reset --hard
+	rbi = "!git rebase -i HEAD~\"$1\" #"
+	arc = !git add . && git rebase --continue
+	acp = !git add . && git cherry-pick --continue
+	rpo = remote prune origin
+	pt = !git tag -l | xargs git tag -d && git fetch -t
